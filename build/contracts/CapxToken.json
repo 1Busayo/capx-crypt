@@ -33,52 +33,7 @@
           "internalType": "uint256",
           "name": "_value",
           "type": "uint256"
-        }
-      ],
-      "name": "Approval",
-      "type": "event"
-    },
-    {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": true,
-          "internalType": "address",
-          "name": "_from",
-          "type": "address"
-        },
-        {
-          "indexed": true,
-          "internalType": "address",
-          "name": "_to",
-          "type": "address"
-        },
-        {
-          "indexed": false,
-          "internalType": "uint256",
-          "name": "_value",
-          "type": "uint256"
-        }
-      ],
-      "name": "Transfer",
-      "type": "event"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        },
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "name": "allowance",
-      "outputs": [
+      [
         {
           "internalType": "uint256",
           "name": "",
@@ -87,53 +42,7 @@
       ],
       "payable": false,
       "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "name": "balanceOf",
-      "outputs": [
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [],
-      "name": "name",
-      "outputs": [
-        {
-          "internalType": "string",
-          "name": "",
-          "type": "string"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [],
-      "name": "standard",
-      "outputs": [
-        {
-          "internalType": "string",
-          "name": "",
-          "type": "string"
+      "type" "string"
         }
       ],
       "payable": false,
@@ -627,108 +536,7 @@
                   "src": "426:14:0",
                   "stateVariable": false,
                   "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 25,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "426:7:0",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "368:74:0"
-            },
-            "src": "354:89:0"
-          },
-          {
-            "constant": false,
-            "id": 32,
-            "name": "balanceOf",
-            "nodeType": "VariableDeclaration",
-            "scope": 188,
-            "src": "445:44:0",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
-              "typeString": "mapping(address => uint256)"
-            },
-            "typeName": {
-              "id": 31,
-              "keyType": {
-                "id": 29,
-                "name": "address",
-                "nodeType": "ElementaryTypeName",
-                "src": "453:7:0",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_address",
-                  "typeString": "address"
-                }
-              },
-              "nodeType": "Mapping",
-              "src": "445:27:0",
-              "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
-                "typeString": "mapping(address => uint256)"
-              },
-              "valueType": {
-                "id": 30,
-                "name": "uint256",
-                "nodeType": "ElementaryTypeName",
-                "src": "464:7:0",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_uint256",
-                  "typeString": "uint256"
-                }
-              }
-            },
-            "value": null,
-            "visibility": "public"
-          },
-          {
-            "constant": false,
-            "id": 38,
-            "name": "allowance",
-            "nodeType": "VariableDeclaration",
-            "scope": 188,
-            "src": "491:64:0",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_address_$_t_uint256_$_$",
-              "typeString": "mapping(address => mapping(address => uint256))"
-            },
-            "typeName": {
-              "id": 37,
-              "keyType": {
-                "id": 33,
-                "name": "address",
-                "nodeType": "ElementaryTypeName",
-                "src": "499:7:0",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_address",
-                  "typeString": "address"
-                }
-              },
-              "nodeType": "Mapping",
-              "src": "491:47:0",
-              "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_address_$_t_uint256_$_$",
-                "typeString": "mapping(address => mapping(address => uint256))"
-              },
-              "valueType": {
-                "id": 36,
-                "keyType": {
-                  "id": 34,
+               "id": 34,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "518:7:0",
@@ -777,14 +585,7 @@
                       "baseExpression": {
                         "argumentTypes": null,
                         "id": 43,
-                        "name": "balanceOf",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 32,
-                        "src": "612:9:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
-                          "typeString": "mapping(address => uint256)"
+                        "name": "(address => uint256)"
                         }
                       },
                       "id": 46,
